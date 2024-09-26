@@ -1,0 +1,32 @@
+body{
+  background-color: #f6fcfa;
+}
+h1{
+  color: rgb(226, 1, 1);
+}
+h2{
+  color: rgb(244, 10, 205);
+}
+h3{color: #3307f5;
+
+}
+p{color: blueviolet;
+  line-height: 20px;
+  font-size: 16px;
+    font-weight: bold;
+}
+label{
+  color: rgb(6, 175, 222);
+}
+ul{
+  color: rgb(253, 15, 202);
+}
+ol{
+  color: rgb(253, 15, 202);
+}
+button{
+  color: rgb(253, 12, 84);
+}
+
+
+

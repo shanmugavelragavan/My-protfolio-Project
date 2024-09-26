@@ -1,0 +1,537 @@
+/* ---------------------GOOGLE---------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+ 
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-image: linear-gradient(to right top, #572b63, #2c1b3b, #251e3d, #1f1f3d, #18213d);
+    color: black;
+    line-height: 1.6;
+}
+
+/* ---------------------HEADER---------------------------- */
+
+.header{
+    background-color: #191924;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+.logo img{
+    height: 50px;
+   
+}
+
+.navbar a{
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: color 0.3s ease;
+    overflow: hidden;
+}
+
+.navbar a:hover{
+    color: #db00ff;
+}
+
+.menu-icon{
+    display: none;
+    cursor: pointer;
+} 
+
+.github{
+    background-color: transparent;
+    color: #b500ff;
+    padding: 10px 16px;
+    border: 1px solid #b500ff;
+    border-radius: 40px;
+    text-decoration: none;
+    
+}
+
+.github:hover{
+    background-color: #854ce6;
+    color: #f2f3f4;
+    transition: all 01s ease;
+    
+} 
+
+main{
+    padding-top: 80px;
+    overflow-x: hidden;
+}
+/* ---------------------HOME SECTION---------------------------- */
+
+.home{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 5%;
+    margin: 0px auto;
+    width: 90vw;
+    margin-right: 30px;
+    gap: 30px;
+}
+
+.home-content{
+    max-width: 50%;
+    margin-top: 100px;
+}
+
+.home-content h1{
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: #f2f3f4;
+}
+
+.home-content h3{
+    font-size: 32px;
+    color: #f2f3f4;
+    margin-bottom: 16px;
+}
+
+.nameslideshow{
+    color: #b500ff;
+    animation: nameslideshow 3s steps(11) infinite alternate,curser 0.5s infinite;
+    border-right: 2px solid #db00ff;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    vertical-align: middle;
+    width: 13ch;
+}
+
+@keyframes nameslideshow{
+    from{
+        width: 0;
+    }
+}
+
+@keyframes curser{
+    50%{
+        border: transparent;
+    }
+}
+/* 
+.nameslideshow:after{
+  margin-left: 10px;
+  color: #854ce6;
+  animation: changename 7s infinite linear;
+  content: '';
+}
+
+@keyframes changename{
+  0% { content: "FSSA STUDENT"}
+  25% { content: "HTML"}
+  50% { content: "CSS"}
+  75% { content: "PROBLEM SOLVING"}
+  100% { content: "JAVA SCRIPT"}
+} */
+
+.home-content p{
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #7e8084;
+}
+
+.resume{
+    display: inline-block;
+    background-image: linear-gradient(to right top, #db00ff, #c900ff, #b500ff, #a000ff, #8800ff);
+    color: #fff;
+    padding: 10px 16px;
+    border-radius: 15px;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.resume:hover{
+    transform: scale(1.05);
+}
+
+.home-img img{
+    max-width: 80%;
+    border-radius: 50%;
+    border: 1px solid #b500ff;
+
+}
+
+/* ---------------------SKILLS SECTION---------------------------- */
+
+.skills-page{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px;
+} 
+
+.skills-header{
+    text-align: center;
+    margin-bottom: 32px;
+    color: #7e8084;
+}
+
+.skills-header h1{
+    font-size: 42px;
+    color: #f2f3f4;
+    margin-top: 50px;
+}
+
+.skills-header p{
+    font-size: 20px;
+}
+.skills-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+}
+
+.skills-section-1,
+.skills-section-2{
+    background-color: #171721;
+    border-radius: 10px;
+    padding: 24px;
+    border: 1px solid #854ce6;
+}
+
+.s1-h2,
+.s2-h2{
+    color: #f2f3f4;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 24px;
+}
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.skill{
+    border: 1px solid #7e8084;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    color: #7e8084;
+}
+
+.skill img{
+    width: 30px;
+}
+.skill-1 h4,
+.skill-2 h4{
+    color: #7e8084;
+    margin: 0;
+    font-size: 16px;
+}
+
+/* ---------------------PROJECT SECTION---------------------------- */
+
+.project {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px;
+}
+
+.project-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.project-header h1 {
+  font-size: 42px;
+  margin-top: 50px;
+  margin-bottom: 16px;
+  color: #f2f3f4;
+}
+
+.project-header p {
+  font-size: 18px;
+  color: #666;
+}
+
+.title {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.title > div {
+  background-color: #1c1c27;
+  color: #854ce6;
+  padding: 8px 16px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 16px;
+  border: 1px solid #854ce6;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 32px;
+}
+
+.card {
+  background-color: black;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.5s ease;
+
+}
+
+.card:hover {
+  box-shadow: -6px -7px 8px 8px rgba(0, 0, 0),5px 5px 8px 8px rgba(0, 0, 0);
+  transform: translateY(-5px);
+  background-color: #191924;
+}
+
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: all 0.5s;
+}
+
+.card-content {
+  padding: 24px;
+}
+
+.span h4 {
+  display: flex;
+  gap: 10px;
+  color: #854ce6;
+  margin-bottom: 1rem;
+  padding-left: 10px;
+}
+
+.span h4 span {
+  background-color: #2a2a3e;
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+.date {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  margin-bottom: 16px;
+}
+
+.date h2 {
+  font-size: 20px;
+  color: #c3c4c5;
+}
+
+.date h4 {
+  font-size: 12px;
+  color: #666;
+}
+
+.card p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #7e8084;
+  padding: 16px;
+}
+
+/* ---------------------CONTACT SECTION---------------------------- */
+
+.contact {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px 20px;/ 
+}
+
+.c-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.c-header h1 {
+    font-size: 42px;
+    color: #f2f3f4;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+
+.c-header p {
+    font-size: 18px;
+    color: #666;
+}
+
+form {
+    background-color: #171721;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.input-box h2 {
+    font-size: 24px;
+    color: #ecf0f1;
+    margin-bottom: 15px;
+}
+
+input, textarea {
+    background-color: transparent;
+    color: #f2f3f4;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #c3c4c5;
+    border-radius: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.btn {
+    background-image: linear-gradient(to right top, #db00ff, #c900ff, #b500ff, #a000ff, #8800ff);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+/* ---------------------FOOTER---------------------------- */
+
+
+.footer {
+    background-color: #1c1c27;
+    color: #ecf0f1;
+    padding: 32px;
+    text-align: center;
+}
+
+.footer h1{
+    color: #a000ff;
+}
+.footer ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 16px 0;
+}
+
+.footer ul li {
+    margin: 0 16px;
+}
+
+.footer ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+.footer ul li a:hover{
+    color: #db00ff;
+}
+
+.social a {
+    color: #ecf0f1;
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+.social a:hover{
+    color: #db00ff;
+}
+.footer .copyright{
+    margin-top: 20px;
+    font-size: 10px;
+}
+
+/* ---------------------@MEDIA---------------------------- */
+
+@media (max-width:768px){
+    .menu-icon{
+        display: block;
+    }
+
+    .bx-menu{
+        font-size: 30PX;
+    }
+
+    .navbar{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        background-color: transparent;
+        top: 80px;
+        left: 15px;
+        padding: 10px 0;
+        width: 100%;
+        text-align: start;
+    }
+    
+    .navbar.active{
+        display: flex;
+    }
+
+    .navbar a{
+        margin: 10px 0;
+        font-size: 20px;
+    }
+
+    .github{
+        display: none;
+    } 
+
+    .home{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .home-content{
+        max-width: 100%;
+        margin-top: 0;
+    }
+    .home-img{
+        max-width: 100%;
+    }
+
+    .home-content h1{
+        font-size: 32px;
+    }
+
+    .home-content h3{
+        font-size: 20px;
+    }
+    
+}
+
+
